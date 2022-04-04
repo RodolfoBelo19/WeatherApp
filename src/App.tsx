@@ -2,7 +2,6 @@ import { GlobalStyles } from "./styles/globalStyles";
 // import img from "./assets/cloud.jpeg"; - versão 2
 import { api } from "./Api";
 import { useEffect, useState } from "react";
-import { City } from "./City";
 
 
 export const App = () =>  {
@@ -11,19 +10,6 @@ export const App = () =>  {
   const [weather, setWeather] = useState<Props>();
 
   const [allWeather, setAllWeather] = useState<Props>();
-
-  const cityList = City
-
-  
-  // useEffect(() => {
-  //   axios.get(`https://api.weatherapi.com/v1/lookup.json?key=c73a3343e7784ceca0202317220204&q&q=brazil`)
-  //     .then((response) => {
-  //       setAllWeather(response.data)
-  //     })
-  //     .catch((err) => {
-  //       console.error(`Ops! Ocorreu um erro! ${err}`)
-  //     })
-  // })
 
   // Depois criar listas de cidades de algumas regioes, como feito nas categorias do projeto netflix
 
